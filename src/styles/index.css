@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  background: #121212;
+  font-family: 'Patrick Hand', cursive;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  background-image:
+    linear-gradient(transparent 28px, rgba(255, 255, 255, 0.05) 28px),
+    linear-gradient(to right, transparent 40px, rgba(255, 75, 75, 0.3) 40px, transparent 41px);
+  background-size: 100% 30px, 100% 100%;
+  border-radius: 8px;
+}
+
+.todo-header {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+.todo-input-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #444;
+  background: transparent;
+  font-size: 1rem;
+  color: #e0e0e0;
+  outline: none;
+}
+
+.todo-input::placeholder {
+  color: #888;
+}
+
+.todo-add-button,
+.todo-clear-button {
+  padding: 0.5rem;
+  background: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.todo-add-button:hover,
+.todo-clear-button:hover {
+  background: #444;
+}
+
+.todo-clear-button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-clear-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed #444;
+}
+
+.todo-delete-button {
+  background: none;
+  border: none;
+  color: #ff5555;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.todo-delete-button:hover {
+  color: #ff4444;
+}
