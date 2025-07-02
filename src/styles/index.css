@@ -52,7 +52,8 @@ body {
 }
 
 .todo-add-button,
-.todo-clear-button {
+.todo-clear-button,
+.todo-delete-user-button {
   padding: 0.5rem;
   background: #333;
   color: #e0e0e0;
